@@ -1,0 +1,19 @@
+.subscribe {
+  background-color: #0A021C;
+  color: white;
+}
+
+.cta {
+  background-color: #ff6b6b;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background-color: #C2AFF7;
+  left: -15px;
+  top: -5px;
+}

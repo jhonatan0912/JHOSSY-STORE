@@ -1,0 +1,12 @@
+.circle::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-color: #C2AFF7;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.price {
+  color: #ff6b6b;
+}

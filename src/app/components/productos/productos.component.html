@@ -1,0 +1,53 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-3 border h-max rounded-md hidden sm:block">
+      <p class="border-b font-bold text-2xl py-3">Ropa Hombre</p>
+      <div class="flex flex-col gap-4 py-3">
+        <a class="flex items-center justify-between cursor-pointer">
+          <span>Marca</span>
+          <img src="/assets/down-arrow.png" width="20">
+        </a>
+        <a class="flex items-center justify-between cursor-pointer">
+          <span>Vendido por</span>
+          <img src="/assets/down-arrow.png" width="20">
+        </a>
+        <a class="flex items-center justify-between cursor-pointer">
+          <span>Tipo de envio</span>
+          <img src="/assets/down-arrow.png" width="20">
+        </a>
+        <a class="flex items-center justify-between cursor-pointer">
+          <span>Ofertas con tarjeta oh!</span>
+          <img src="/assets/down-arrow.png" width="20"></a>
+        <a class="flex items-center justify-between cursor-pointer">
+          <span>Color</span>
+          <img src="/assets/down-arrow.png" width="20">
+        </a>
+        <a class="flex items-center justify-between cursor-pointer">
+          <span>Talla</span>
+          <img src="/assets/down-arrow.png" width="20">
+        </a>
+        <a class="flex items-center justify-between cursor-pointer">
+          <span>Precio</span>
+          <img src="/assets/down-arrow.png" width="20">
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <div class=" grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="card pb-2" *ngFor="let product of productosList">
+          <div class="img-container">
+            <img src="https://jhonatan0912.github.io/JHOSSY-API/{{product.image}}" alt="">
+          </div>
+          <div class="px-2 mt-1">
+            <p class="font-bold">{{product.name}}</p>
+            <p class="text-sm text-gray-500">{{product.description}}</p>
+            <div class="flex justify-between font-semibold py-3">
+              <p>Precio</p>
+              <p>S/.{{product.price}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

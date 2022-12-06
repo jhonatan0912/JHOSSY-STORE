@@ -1,0 +1,14 @@
+.work-with-us>img {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.work-with-us>img:hover {
+  opacity: 1;
+  transition: all .2s ease-in-out;
+}
+
+.cta {
+  background-color: #ff6b6b;
+  color: white;
+}

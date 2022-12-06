@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <form class="flex flex-col" [formGroup]="contactoForm" (ngSubmit)="process()">
+    <h1 class="font-bold text-center text-4xl">Contactanos</h1>
+    <div class="mt-3 flex flex-col gap-3 w-50 m-auto">
+      <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" formControlName="nombre"
+        #nombre required="required">
+      <input class="form-control" type="email" name="email" id="email" placeholder="Email" formControlName="email"
+        #email required="required">
+      <textarea class="form-control" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"
+        formControlName="mensaje" #mensaje required="required"></textarea>
+      <button class="btn btn-primary block m-auto">SEND</button>
+    </div>
+  </form>
+</div>
